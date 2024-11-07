@@ -1,0 +1,53 @@
+int maior(int a, int b) {
+    int m;
+    if(a > b){
+        return a;
+    } else if {
+        return b;
+    }
+}
+
+int invalido(char a) {
+    if(a == "F" || a == "f"){
+        return char f[] = "Feminino";
+    }
+    if(a == "M" || a == "m"){
+        return char m[] = "Masculino";
+    } else if {
+        return char i[] = "Inválido";
+    }
+}
+
+int letra(char a) {
+    if (a == "a" || a == "e" || a == "i" || a == "o" || a == "u" || a == "ã"){
+        return char vowel[] = "vogal";
+    } else if {
+        return char consonant[] = "consoante";
+    }
+}
+
+int tabajara(float s) {
+    float r;
+    switch (s){
+    // case s <= 280:
+    //     r *= 0,2;
+    //     return r, ; 
+    //     break;
+    //
+    // case s > 280 && s <= 700:
+    //     r *= 0,15;
+    //     return r; 
+    //     break;
+    
+    // case s > 700 && s <= 1500:
+    //     r *= 0,1;
+    //     return r; 
+    //     break;
+    
+    // case s > 1500:
+    //     r *= 0,05;
+    //     return r; 
+    //     break;
+    //     }
+}
+
