@@ -1,53 +1,68 @@
 int maior(int a, int b) {
-    int m;
     if(a > b){
         return a;
-    } else if {
+    } else {
         return b;
     }
 }
 
 int invalido(char a) {
-    if(a == "F" || a == "f"){
-        return char f[] = "Feminino";
+    if(a == 70 || a == 102){
+        char f[] = "Feminino";
+        return f[8];
+        // return char f[8] = "Feminino";
     }
-    if(a == "M" || a == "m"){
-        return char m[] = "Masculino";
-    } else if {
-        return char i[] = "Inválido";
+    if(a == 77 || a == 109){
+        char m[] = "Masculino";
+        return m[9];
+    } else {
+        char i[] = "Inválido";
+        return i[8];
     }
 }
 
 int letra(char a) {
-    if (a == "a" || a == "e" || a == "i" || a == "o" || a == "u" || a == "ã"){
-        return char vowel[] = "vogal";
-    } else if {
-        return char consonant[] = "consoante";
+    if (a == 97 || a == 101 || a == 105 || a == 111 || a == 117 || a == 227){
+        char vowel[] = "vogal";
+        return vowel[5];
+    } else {
+        char consonant[] = "consoante";
+        return consonant[9];
     }
 }
 
-int tabajara(float s) {
-    float r;
-    switch (s){
-    // case s <= 280:
-    //     r *= 0,2;
-    //     return r, ; 
-    //     break;
-    //
-    // case s > 280 && s <= 700:
-    //     r *= 0,15;
-    //     return r; 
-    //     break;
+void tabajara(float s) {
+    float percentual;
+    float aumento;
+    float new;
+
+    if(s <= 280){
+        percentual = 20;
+        aumento = s * percentual/100;
+        new = s + aumento;
+        printf("\nSalário anterior               Percentual de aumento                   Valor de aumento                   Novo salário\nR$ %.0f,00                      %.0f%%                                     R$ %.0f,00                           R$ %.0f,00\n", s, percentual, aumento, new);
+        // printf("\nSalário anterior: R$ %.0f,00\nPercentual de aumento: %.0f%%\nValor de aumento: R$ %.0f,00\nNovo salário: R$ %.0f,00\n", s, percentual, aumento, new);
+    }
     
-    // case s > 700 && s <= 1500:
-    //     r *= 0,1;
-    //     return r; 
-    //     break;
+    if(s > 280 && s <= 700){
+        percentual = 15;
+        aumento = s * percentual/100;
+        new = s + aumento;
+        printf("\nSalário anterior: R$ %.0f,00\nPercentual de aumento: %.0f%%\nValor de aumento: R$ %.0f,00\nNovo salário: R$ %.0f,00\n", s, percentual, aumento, new);
+    }
     
-    // case s > 1500:
-    //     r *= 0,05;
-    //     return r; 
-    //     break;
-    //     }
+    if(s > 700 && s <= 1500){
+        percentual = 10;
+        aumento = s * percentual/100;
+        new = s + aumento;
+        printf("\nSalário anterior: R$ %.0f,00\nPercentual de aumento: %.0f%%\nValor de aumento: R$ %.0f,00\nNovo salário: R$ %.0f,00\n", s, percentual, aumento, new);
+    }
+    
+    if(s > 1500){
+        percentual = 5;
+        aumento = s * percentual/100;
+        new = s + aumento;
+        printf("\nSalário anterior: R$ %.0f,00\nPercentual de aumento: %.0f%%\nValor de aumento: R$ %.0f,00\nNovo salário: R$ %.0f,00\n", s, percentual, aumento, new);
+    }
 }
 
